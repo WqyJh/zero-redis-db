@@ -1,3 +1,5 @@
 .otel-build
 .vscode
 example/example
+otel_rules
+otel_pkgdep

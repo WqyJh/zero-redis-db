@@ -9,24 +9,24 @@
     "ImportPath": "github.com/zeromicro/go-zero/core/stores/redis",
     "FileName": "conf.go",
     "Replace": true,
-    "Path": "github.com/WqyJh/zero-redis-db/redis"
+    "Path": "github.com/WqyJh/zero-redis-db"
   },
   {
     "ImportPath": "github.com/zeromicro/go-zero/core/stores/redis",
     "FileName": "redisclientmanager.go",
     "Replace": true,
-    "Path": "github.com/WqyJh/zero-redis-db/redis"
+    "Path": "github.com/WqyJh/zero-redis-db"
   },
   {
     "ImportPath": "github.com/zeromicro/go-zero/core/stores/redis",
     "FileName": "redisblockingnode.go",
     "Replace": true,
-    "Path": "github.com/WqyJh/zero-redis-db/redis"
+    "Path": "github.com/WqyJh/zero-redis-db"
   },
   {
     "ImportPath": "github.com/zeromicro/go-zero/core/stores/redis",
     "Function": "NewRedis",
     "OnEnter": "newRedisOnEnter",
-    "Path": "github.com/WqyJh/zero-redis-db/redis"
+    "Path": "github.com/WqyJh/zero-redis-db"
   }
 ]

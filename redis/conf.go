@@ -47,6 +47,9 @@ func (rc RedisConf) NewRedis() *Redis {
 	if rc.Tls {
 		opts = append(opts, WithTLS())
 	}
+	if rc.DB > 0 {
+		opts = append(opts, WithDB(rc.DB))
+	}
 
 	return newRedis(rc.Host, opts...)
 }
@@ -75,4 +78,11 @@ func (rkc RedisKeyConf) Validate() error {
 	}
 
 	return nil
+}
+
+// WithDB customizes the given Redis with given database.
+func WithDB(db int) Option {
+	return func(r *Redis) {
+		r.DB = db
+	}
 }
